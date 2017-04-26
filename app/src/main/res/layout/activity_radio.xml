@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/radio_paper" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:text="Radio Bot"
+        android:textSize="35dp" />
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/progressBar2"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:spb_sections_count="4"
+        app:spb_gradients="@bool/spb_default_progressiveStart_activated"
+        app:spb_colors="@color/colorPrimary"
+        app:spb_color="@color/colorPrimary"
+        app:spb_speed="1.0"
+        app:spb_stroke_width="8dp"
+        app:spb_stroke_separator_length="4dp"
+        app:spb_reversed="false"
+        app:spb_mirror_mode="false"
+        app:spb_progressiveStart_activated="true"
+        app:spb_progressiveStart_speed="1.2"
+        app:spb_progressiveStop_speed="3.4"
+        />
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/progressBar1"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:spb_sections_count="4"
+        app:spb_gradients="@bool/spb_default_progressiveStart_activated"
+        app:spb_colors="@color/colorPrimary"
+        app:spb_color="@color/colorAccent"
+        app:spb_speed="1.0"
+        app:spb_stroke_width="8dp"
+        app:spb_stroke_separator_length="4dp"
+        app:spb_reversed="false"
+        app:spb_mirror_mode="false"
+        app:spb_progressiveStart_activated="true"
+        app:spb_progressiveStart_speed="1.2"
+        app:spb_progressiveStop_speed="3.4"
+        />
+    <fr.castorflex.android.smoothprogressbar.SmoothProgressBar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/progressBar3"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:spb_sections_count="4"
+        app:spb_gradients="@bool/spb_default_progressiveStart_activated"
+        app:spb_colors="@color/colorPrimary"
+        app:spb_color="@color/colorPrimary"
+        app:spb_speed="1.0"
+        app:spb_stroke_width="8dp"
+        app:spb_stroke_separator_length="4dp"
+        app:spb_reversed="false"
+        app:spb_mirror_mode="false"
+        app:spb_progressiveStart_activated="true"
+        app:spb_progressiveStart_speed="1.2"
+        app:spb_progressiveStop_speed="3.4"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center">
+
+        <info.hoang8f.widget.FButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonPlay"
+            fbutton:buttonColor="@color/colorPrimaryDark"
+            fbutton:cornerRadius="20dp"
+            android:text="Play"
+            android:textSize="20dp"
+            android:elevation="45dp"
+            android:textColor="@color/colorAccent"
+            fbutton:shadowColor="@color/colorPrimary"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="10dp" />
+
+        <info.hoang8f.widget.FButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonStopPlay"
+            android:textColor="@color/colorAccent"
+            fbutton:buttonColor="@color/colorPrimaryDark"
+            fbutton:cornerRadius="20dp"
+            android:textSize="20dp"
+            android:elevation="45dp"
+            android:text="Stop"
+            fbutton:shadowColor="@color/colorPrimary"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="10dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Developed By Ifaz Ahmed Aflan"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
